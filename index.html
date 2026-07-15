@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#72c7f2">
+  <title>Flappy Cow</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="menu" class="screen">
+    <h1>🐄 Flappy Cow</h1>
+    <p>Fliege mit der Kuh zwischen den Hochhäusern hindurch.</p>
+    <button id="playBtn" type="button">▶ Spielen</button>
+    <div class="highscore">Highscore: <span id="best">0</span></div>
+    <p class="hint">PC: Leertaste oder Klick · Handy: Tippen</p>
+  </main>
+
+  <canvas id="game" aria-label="Flappy Cow Spiel"></canvas>
+
+  <section id="gameOver" class="panel" aria-live="polite">
+    <h2>Game Over</h2>
+    <p>Score: <strong id="score">0</strong></p>
+    <p>Highscore: <strong id="finalBest">0</strong></p>
+    <button id="restartBtn" type="button">Nochmal spielen</button>
+    <button id="menuBtn" class="secondary" type="button">Zum Menü</button>
+  </section>
+
+  <script src="game.js"></script>
+</body>
+</html>
